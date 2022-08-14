@@ -25,6 +25,8 @@ namespace LetsEncrypt.ConsoleApp
         public string CertificateFileName => GetValue(nameof(CertificateFileName));
         public string CertificatePassword => GetValue(nameof(CertificatePassword));
 
+        public string Environment => GetValue(nameof(Environment));
+
         // Private Methods
 
         private string GetValue(string key)

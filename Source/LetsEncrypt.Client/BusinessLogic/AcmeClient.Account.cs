@@ -18,19 +18,19 @@ namespace LetsEncrypt.Client
             return account;
         }
 
-        // Private Methods
+    // Private Methods
 
-        //private async Task<Account> GetAccountAsync(Uri accountLocation)
-        //{
-        //    var nonce = await GetNonceAsync();
+    //private async Task<Account> GetAccountAsync(Uri accountLocation)
+    //{
+    //  var nonce = await GetNonceAsync();
 
-        //    var signedData = _jws.Sign(null, accountLocation, accountLocation, nonce);
-        //    var account = await PostAsync<Account>(accountLocation, signedData);
-        //    account.Location = accountLocation;
-        //    return account;
-        //}
+    //  var signedData = _jws.Sign(null, accountLocation, accountLocation, nonce);
+    //  var account = await PostAsync<Account>(accountLocation, signedData);
+    //  account.Location = accountLocation;
+    //  return account;
+    //}
 
-        private async Task<Account> DeactivateAccountAsync(Account account)
+    private async Task<Account> DeactivateAccountAsync(Account account)
         {
             var nonce = await GetNonceAsync();
 

@@ -7,7 +7,7 @@ namespace LetsEncrypt.Client.IO
 {
     public class LocalStorage
     {
-        private const string FOLDER = "Output//";
+        private const string FOLDER = "Output/";//"Output//"
         private const string ACCOUNT_FILE = "Account.{0}.txt";
         private const string ACCOUNT_PRIVATE_KEY_FILE = "Account.{0}.Private.pem";
         private const string ACCOUNT_PUBLIC_KEY_FILE = "Account.{0}.Public.pem";

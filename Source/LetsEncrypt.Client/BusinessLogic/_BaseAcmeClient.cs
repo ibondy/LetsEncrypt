@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
+using Directory = LetsEncrypt.Client.Entities.Directory;
+
 namespace LetsEncrypt.Client
 {
     public class BaseAcmeClient

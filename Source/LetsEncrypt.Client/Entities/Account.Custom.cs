@@ -76,6 +76,8 @@ namespace LetsEncrypt.Client.Entities
 
         public static async Task<Account> LoadAsync(string contactEmail)
         {
+      try
+      {
             var location = await _localStorage.LoadAccount(contactEmail);
             var privateKeyPem = await _localStorage.LoadPrivateKey(contactEmail);
             //var publicKeyPem = await _localStorage.LoadPublicKey(contactEmail);
@@ -83,6 +85,12 @@ namespace LetsEncrypt.Client.Entities
             var key = new RsaKeyPair(privateKeyPem);
 
             return new Account(key, location);
+      }
+      catch(Exception e)
+      {
+        return null;
+      }
+          
         }
     }
 }
