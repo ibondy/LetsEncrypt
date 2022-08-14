@@ -1,27 +1,23 @@
 # Let's Encrypt C# library
-
-[![NuGet](https://img.shields.io/nuget/dt/LetsEncrypt.Client.svg)](https://www.nuget.org/packages/LetsEncrypt.Client) 
-[![NuGet](https://img.shields.io/nuget/vpre/LetsEncrypt.Client.svg)](https://www.nuget.org/packages/LetsEncrypt.Client)
-
 Solution consist of 2 projects:
-* **LetsEncrypt.Client** (.Net Standard Library - available as [nuget package](https://www.nuget.org/packages/LetsEncrypt.Client/1.0.0))
-* **LetsEncrypt.ConsoleApp** (.Net Core Console application)
+* **LetsEncrypt.Client** (.Net 6 Library
+* **LetsEncrypt.ConsoleApp** (.Net 6 Console application)
 
 #### LetsEncrypt.Client
 
-LetsEncrypt.Client is simple and straightforward C# implementation of [ACME](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) client for [Let's Encrypt](https://letsencrypt.org/) certificates. Library is based on **.NET Standard 2.1+**.
+LetsEncrypt.Client is simple and straightforward C# implementation of [ACME](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) client for [Let's Encrypt](https://letsencrypt.org/) certificates. Library is based on **.NET 6+**.
 It uses Let's Encrypt **v2 API** and this library is primary oriented for generation of **wildcard** certificates as .pfx. 
 
 #### LetsEncrypt.ConsoleApp
 
-LetsEncrypt.ConsoleApp is C# implementation|usage of previous LetsEncrypt.Client library based on **.NET Core 3.1**. It is simple **console application** which generates Let's Encrypt certificates. 
+LetsEncrypt.ConsoleApp is C# implementation|usage of previous LetsEncrypt.Client library based on **.NET 6.0**. It is simple **console application** which generates Let's Encrypt certificates. 
 
 
 ## LetsEncrypt.Client
 
 ### Usage
 
-Add [LetsEncrypt.Client](https://www.nuget.org/packages/LetsEncrypt.Client/1.0.0) as nuget package (or manual **.dll reference**) to your project.
+Add [LetsEncrypt.Client] as (**.dll reference**) to your project.
 
 First step is to create client object to specific environment ([staging](https://letsencrypt.org/docs/staging-environment/) or production ... use staging environment first to avoid [rate limits](https://letsencrypt.org/docs/rate-limits/)):
 
