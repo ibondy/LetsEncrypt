@@ -9,9 +9,9 @@ namespace LetsEncrypt.Test
 {
     public class FullProcessMT : BaseUT
     {
-        protected string ContactEmail = "au@turingion.com";
+        protected string ContactEmail = "ivan@mammothmicro.com";
         protected Uri EnviromentUri = ApiEnvironment.LetsEncryptV2Staging;
-        protected List<string> Identifiers = new List<string> { "turingion.com", "*.turingion.com" };
+        protected List<string> Identifiers = new List<string> { "mammothmicro.com", "*.mammothmicro.com" };
 
         [Test]
         public async Task Run()
